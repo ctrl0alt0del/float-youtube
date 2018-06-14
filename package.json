@@ -1,0 +1,26 @@
+{
+  "name": "float-youtube",
+  "version": "0.1.0",
+  "author": {
+    "name": "Alexey Shahin"
+  },
+  "description": "Youtube floating always on top window/ Code and get fun from meme videos",
+  "main": "index.js",
+  "devDependencies": {
+    "electron": "1.7.9",
+    "electron-builder": "latest"
+  },
+  "icon": "builc/icon.ico",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis"
+    }
+  }
+}
